@@ -7,15 +7,7 @@ export default function WeatherValues() {
             13
           </div>
           <div className="d-flex justify-content-start flex-column">
-            <span className="degree">
-              <a href="#" id="celsius-link" class="active">
-                ºC
-              </a>
-              |
-              <a href="#" id="fahrenheit-link">
-                ºF
-              </a>
-            </span>
+            <span className="degree">ºC | ºF</span>
             <ul className="attributes">
               <li className="humidity" id="humidity">
                 Humidity: 40%
