@@ -1,38 +1,210 @@
-.App {
+html {
+  min-height: 100%;
+}
+.container {
+  background-image: url("https://images.unsplash.com/photo-1529035669594-2eb2080f1585?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjBza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.weatherApp {
+  border: 1px solid;
+  border-color: #6f2b25;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-image: linear-gradient(120deg, #6c8a94 0%, #76aec5 50%);
+}
+#searchCity {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-color: #b2481b;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#searchButton {
+  background-color: #b2481b;
+  color: #d2dee3;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  position: relative;
+  left: 330px;
+  bottom: 22px;
+}
+#searchButton:hover {
+  cursor: pointer;
+  transition: 250ms solid ease-in;
+  background-color: #dbb0a0;
+  color: #6f2b25;
+  border-color: #6f2b25;
+  opacity: 0.8;
+}
+#currentLocationButton {
+  background-color: #b2481b;
+  color: #d2dee3;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  position: relative;
+  left: 420px;
+  bottom: 49px;
+}
+#currentLocationButton:hover {
+  cursor: pointer;
+  transition: 250ms solid ease-in;
+  background-color: #dbb0a0;
+  color: #6f2b25;
+  border-color: #6f2b25;
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  font-size: 80px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 0 auto;
+  color: #362935;
+  font-family: "Newsreader", serif;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+.date {
+  text-align: center;
+  color: #6f2b25;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.time {
+  text-align: center;
+  color: #6f2b25;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.description {
+  text-align: center;
+  color: #362935;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: -20px;
+}
+.icon {
+  height: 100px;
+  width: 100px;
+  margin-top: -60px;
+  margin-left: 350px;
+}
+h3,
+h4 {
+  display: inline;
+  margin: 0 auto;
+}
+h3 {
+  margin-left: 70px;
+  font-size: 100px;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: #362935;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  color: #858e96;
+  font-weight: bolder;
+  cursor: default;
+}
+.active {
+  color: #7e3527;
+  font-weight: bolder;
+}
+.temperature {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: #362935;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+}
+.degree {
+  text-align: left;
+  line-height: 50px;
+  color: #be5e44;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.attributes {
+  color: #6f2b25;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  line-height: 15px;
+  padding-right: 200px;
+  bottom: 50px;
+}
+.realFeeling {
+  text-align: center;
+  color: #6f2b25;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 20px;
+  padding-right: 50px;
+}
+
+.realFeelingTemp {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+h5 {
+  color: #6f2b25;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#forecast,
+#hour-forecast {
+  display: inline;
+  text-align: center;
+  color: #6f2b25;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+  color: #be5e44;
+  opacity: 0.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credits {
+  color: #362935;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18 px;
+  text-align: center;
+  margin-top: 10px;
 }
