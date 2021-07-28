@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import SearchForm from "./SearchForm";
-import WeatherDescription from "./WeatherDescription";
 import WeatherValues from "./WeatherValues";
 import RealFeeling from "./RealFeeling";
 import DailyForecast from "./DailyForecast";
@@ -21,7 +20,6 @@ export default function App() {
             <li class="date"></li>
             <li class="time"></li>
           </ul>
-          <WeatherDescription />
           <WeatherValues />
           <RealFeeling />
           <DailyForecast />
