@@ -120,14 +120,15 @@ a {
   color: #362935;
   font-family: Arial, Helvetica, sans-serif;
 }
-a:hover {
+active:hover {
   color: #858e96;
   font-weight: bolder;
   cursor: default;
 }
 .active {
-  color: #7e3527;
+  color: #be5e44;
   font-weight: bolder;
+  text-decoration: none;
 }
 .temperature {
   font-size: 100px;
@@ -140,10 +141,10 @@ a:hover {
 .degree {
   text-align: left;
   line-height: 50px;
-  color: #be5e44;
+  color: #7e3527;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 30px;
-  font-size: 20px;
+  font-size: 25px;
 }
 ul {
   margin: 0;
@@ -157,6 +158,8 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   line-height: 15px;
+  margin-left: 70px;
+  margin-top: -30px;
 }
 .realFeeling {
   text-align: center;
