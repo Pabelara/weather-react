@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import RealFeeling from "./RealFeeling";
 
 export default function WeatherInfo(props) {
   return (
@@ -34,12 +35,7 @@ export default function WeatherInfo(props) {
       </div>
       <br />
       <div className="realFeeling">
-        <ul>
-          <li>Real Feeling</li>
-          <li className="realTemp" id="realTemp">
-            {props.data.realFeeling}ºC
-          </li>
-        </ul>
+        <RealFeeling celsius={props.data.realFeeling} />
       </div>
     </div>
   );
