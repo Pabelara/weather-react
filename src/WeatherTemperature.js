@@ -13,7 +13,7 @@ export default function WeatherTemperature(props) {
   }
   if (unit === "celsius") {
     return (
-      <div className="WeatherTemperature">
+      <div className="WeatherTemperature degree">
         <div className="row">
           <div className="col-7 temperature">{props.celsius}</div>
           <div className=" col-5">
@@ -30,7 +30,7 @@ export default function WeatherTemperature(props) {
   } else {
     let fahrenheit = Math.round((props.celsius * 9) / 5 + 32);
     return (
-      <div className="WeatherTemperature">
+      <div className="WeatherTemperature degree">
         <div className="row">
           <div className="col-7 temperature">{fahrenheit}</div>
           <div className=" col-5">
