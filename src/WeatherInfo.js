@@ -7,7 +7,7 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherInfo(props) {
   return (
     <div className="weatherInfo">
-      <h1 id="city">{props.data.city}</h1>
+      <h1 className="city">{props.data.city}</h1>
       <FormattedDate date={props.data.date} />
       <div className="row">
         <div className="offset-2 col-sm-7 d-flex justify-content-center">
@@ -33,6 +33,7 @@ export default function WeatherInfo(props) {
       <div className="realFeeling">
         <RealFeeling celsius={props.data.realFeeling} />
       </div>
+      <hr className="hr" />
     </div>
   );
 }

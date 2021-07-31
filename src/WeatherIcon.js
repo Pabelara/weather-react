@@ -5,6 +5,7 @@ export default function WeatherIcon(props) {
     <img
       src={`http://openweathermap.org/img/wn/${props.code}@2x.png`}
       alt={props.alt}
+      className="icon"
     />
   );
 }
