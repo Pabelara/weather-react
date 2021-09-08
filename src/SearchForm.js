@@ -60,14 +60,6 @@ export default function Weather(props) {
                 className="form-control shadow-sm"
               />
             </div>
-            <div className="col-sm-2">
-              <input
-                type="submit"
-                value="Current"
-                id="currentLocationButton"
-                className="form-control shadow-sm"
-              />
-            </div>
           </div>
         </form>
         <br />
