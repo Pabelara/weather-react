@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import Weather from "./SearchForm";
-import DailyForecast from "./DailyForecast";
-import WeeklyForecast from "./WeeklyForecast";
 import Credits from "./Credits";
 import "bootstrap/dist/css/bootstrap.css";
 
